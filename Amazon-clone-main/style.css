@@ -1,0 +1,1382 @@
+*{
+	margin: 0;
+	font-family: Arial;
+	border: border-box;
+	
+}
+.navbar{
+	height: 60px;
+	background-color: #0f1111;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+	border: 1.5px solid white;
+}
+
+
+.nav-logo{
+	height: 50px;
+	width: 100px;
+}
+.logo{
+	background-image: url("img/amazon_logo.png");
+	height: 50px;
+	width: 100%;
+	background-size: cover;
+}
+
+
+/*Box2*/
+
+.Add1{
+	color: #cccccc;
+	font-size: 0.85rem;
+	margin-left: 20px;
+
+}
+.Add2{
+	color: white;
+	font-size: 1rem;
+	margin-left: 8px;
+
+}
+.add-icon{
+	display: flex;
+	align-items: center;
+}
+
+
+/*Box3*/
+
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkred;
+    height: 40px;
+    width: 620px;
+    border-radius: 4px;
+}
+.search-select{
+	background-color: #f3f3f3;
+	width: 50px;
+	text-align: center;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border: none;
+}
+.search-input{
+	width: 100%;
+	font-size: 1rem;
+	border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f0101;
+}
+.nav-search:hover{
+	border: 2px solid orange;
+}
+
+/*Box-4*/
+
+span{
+	font-size: 0.7rem;
+}
+.nav-second{
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+/*Cart*/
+
+.nav-cart i{
+
+	font-size: 30px;
+
+}
+.nav-cart{
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+/**Panel**/
+
+.panel{
+	height: 40px;
+	background-color: #222f3d;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+}
+.panel-ops p{
+	display: inline;
+	margin-left: 15px;
+	font-size: 0.85rem;
+}
+.panel-ops{
+	width: 70%;
+	
+}
+.panel-deals{
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+
+/**Hero Section**/
+
+.hero-section{
+	height: 380px;
+	background-image: url("img/hero_image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.hero-content{
+	background-color: white;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	font-size: 0.85rem;
+	width: 80%;
+	margin-bottom: 25px;
+	
+}
+
+/** Shop section **/
+
+.shop-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: #e2e7e6;
+}
+
+
+.box{
+	background-color: white;
+	height: 300px;
+	width: 23%;
+	/* border: 2px solid black; */
+	padding: 20px 0px 15px;
+	margin-top: 15px;
+}
+.box-img{
+	height: 300px;
+	width: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box-content{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+/* .image{
+	display: flex;
+	justify-content: space-between;
+} */
+.box-content p{
+	color: #007185;
+
+}
+
+/* Footer */
+footer{
+	margin-top: 15px;
+}
+.foot-panel1{
+	background-color: #37475a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 50px;
+	font-size: 0.85rem
+}
+
+.foot-panel2{
+	background-color: #222f3d;
+	color: white;
+	height: 300px;
+	display: flex;
+	justify-content: space-evenly;
+}
+ul{
+	margin-top: 20px;
+}
+ul a{
+	display: block;
+	font-size: 0.85rem;
+	margin-top: 10px;
+	color: #dddddd;
+}
+
+.foot-panel3{
+	background-color: #222f3d;
+	color: white;
+	border-top: 0.5px solid white;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	background-image: url("img/amazon_logo.png");
+	height: 50px;
+	width: 100px;
+	background-size: cover;
+}
+.foot-panel4{
+	background-color: #0f1111;
+	color: white;
+	height: 80px;
+	font-size: 0.85rem;
+	text-align: center;
+	/*display: flex;
+	align-items: center;
+	
+	*/
+}
+.pages{
+	
+	padding-top: 25px;
+}
+.copyright{
+	padding-top: 5px;
+	
+}
+/* css applied on slider */
+.slider {
+	width: 100%; /* Full width of the viewport */
+	height: 300px; /* Full height of the viewport */
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: cover;
+	transition: opacity 0.5s ease;
+	opacity: 0;
+  }
+  
+  .active {
+	opacity: 1;
+  }
+  
+  @keyframes slide {
+	0% {
+	  left: 0;
+	}
+	33.333% {
+	  left: -100%;
+	}
+	66.666% {
+	  left: -200%;
+	}
+	100% {
+	  left: 0;
+	}
+  }
+  
+  .prev,
+  .next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px 10px;
+	font-size: 16px;
+  }
+  
+  .prev {
+	left: 0;
+  }
+  
+  .next {
+	right: 0;
+  }
+
+  .image-container {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	object-fit: cover;
+}
+
+
+
+.image-container:hover img.first-image {
+	opacity: 0;
+	height: 500px;
+	width: 220px;
+	object-fit: cover;
+}
+
+.image-container:hover img.second-image {
+	opacity: 1;
+}
+
+.image-container .first-image,
+.image-container .second-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.image-container .second-image {
+	opacity: 0;
+}
+.first-image{
+	height: 100%;
+	width: 100%;
+}
+
+/* this is for single card */
+
+.box-content1{
+	background-image:  url(./510Y4078n0L._AC_SR350\,526_FMwebp_QL65_.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.box-content1{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+	
+	
+	
+}
+
+.box-content1:hover {
+	background-image: url(./81oQJwz0ZiS._AC_SR350\,526_FMwebp_QL65_.webp); /* Change to the path of your hover image */
+}
+
+
+/* second card */
+.box-content2{
+	background-image: url(./61x-SvuTEwL._AC_SX296_SY426_FMwebp_QL65_.webp);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.box-content2{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+	
+}
+
+.box-content2:hover {
+	background-image: url(./61JUAq7WWzL._AC_SX296_SY426_FMwebp_QL65_.webp); /* Change to the path of your hover image */
+}
+
+/* third card */
+.box-content3{
+	background-image: url(./61u3PCzKlOL._AA720_AC_FMwebp_QL65_.webp);
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.box-content3{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+	
+}
+
+.box-content3:hover {
+	background-image: url(./71UdxzBxSaL._AA720_AC_FMwebp_QL65_.webp); /* Change to the path of your hover image */
+}
+
+/* fourth card */
+.box-content4{
+	background-image: url(./71eLY1Dn3NL._AC_SX296_SY426_FMwebp_QL65_.webp);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.box-content4{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+}
+
+.box-content4:hover {
+	background-image: url(./61s-3q6CYxL._AC_SX296_SY426_FMwebp_QL65_.webp); /* Change to the path of your hover image */
+}
+
+/* fifth card */
+.box-content5{
+	background-image: url(./41dv9S6YswL._AC_SX296_SY426_QL65_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+	
+}
+.box-content5{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+}
+
+.box-content5:hover {
+	background-image: url(./61m-uXYC4BL._AC_SX296_SY426_QL65_.jpg); /* Change to the path of your hover image */
+}
+
+/* sixth card */
+
+.box-content6{
+	background-image: url(./71LFafQlIBL._AC_SR1000\,1000_FMwebp_QL65_.webp);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.box-content6{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+}
+
+.box-content6:hover {
+	background-image: url(./61KChi4KADL._AC_SX296_SY426_FMwebp_QL65_.webp); /* Change to the path of your hover image */
+}
+
+/* seventh card */
+
+.box-content7{
+	background-image: url(./71Xf+WL3Y3L._AC_SX296_SY426_QL65_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.box-content7{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+}
+
+.box-content7:hover {
+	background-image: url(./61r-TFmj6fL._AC_SR526\,526_FMwebp_QL65_.webp); /* Change to the path of your hover image */
+}
+
+/* Eight card */
+.box-content8{
+	background-image: url(./61k9JlTh3HL._AC_SX296_SY426_QL65_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.box-content8{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	border: #ccc;
+}
+
+.box-content8:hover {
+	background-image: url(./51yxOEfU2jL._AC_SX296_SY426_QL65_.jpg); /* Change to the path of your hover image */
+}
+
+/* todays deal */
+/* Realated to you have viwed */
+.shop-section1 {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scrolling if any */
+    margin-top: 10px;
+	
+}
+
+.shop-section1 .box11 {
+    display: inline-block;
+    width: 200px; /* Adjust as needed */
+    vertical-align: top; /* Align boxes from the top */
+    white-space: normal; /* Restore normal white space for box content */
+}
+.inline-scroll {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-y: scroll; /* Hides vertical scrolling if any */
+    width: 100%; /* Adjust as needed */
+}
+
+/* card21 */
+
+.box11 p{
+	width: 205px;
+}
+.box-content11{
+	background-image: url(./31Q0xVpBphL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content11{
+	width: 202px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+	
+	
+}
+/* 22 card */
+.box-content12{
+	background-image: url(./41U0KBNRk5L._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content12{
+	width: 204px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 23 card */
+.box-content13{
+	background-image: url(./41tj+1+nAFL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content13{
+	width: 204px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 24 card */
+.box-content14{
+	background-image: url(./41TssgTTkwL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content14{
+	width: 204px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 25 card */
+.box-content15{
+	background-image: url(./31BFEQMnpIL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content15{
+	width: 204px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 26 card */
+.box-content16{
+	background-image: url(./61I6Dgh3btL._SY695__AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content16{
+	width: 204px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 27 card */
+.box-content17{
+	background-image: url(./41uGjvXbeBL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content17{
+	width: 204px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 28 card */
+.box-content18{
+	background-image: url(./41-iP43EMFL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content18{
+	width: 204px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* Realated to you have viwed */
+.shop-section2 {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scrolling if any */
+    margin-top: 10px;
+	
+	
+}
+
+
+.shop-section2 .box21 {
+    display: inline-block;
+    width: 200px; /* Adjust as needed */
+    vertical-align: top; /* Align boxes from the top */
+    white-space: normal; /* Restore normal white space for box content */
+}
+.inline-scroll {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-y: scroll; /* Hides vertical scrolling if any */
+    width: 100%; /* Adjust as needed */
+}
+
+/* card21 */
+.box-content21{
+	background-image: url(./71zzxrzZGwS._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content21{
+	width: 200px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	margin-bottom: 20px;
+	
+}
+/* 22 card */
+.box-content22{
+	background-image: url(./91g8hf6CDsL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content22{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 23 card */
+.box-content23{
+	background-image: url(./71BGkZYVilL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content23{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 24 card */
+.box-content24{
+	background-image: url(./4153s-CTNgL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content24{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 25 card */
+.box-content25{
+	background-image: url(./71sZkW1K-aL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content25{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 26 card */
+.box-content26{
+	background-image: url(./71F7QrLYI6L._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content26{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 27 card */
+.box-content27{
+	background-image: url(./611pZlbmmyL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content27{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 28 card */
+.box-content28{
+	background-image: url(./613uKDg6q6L._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content28{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* Up to 60% off | Home furnishing | Curated from stores near you */
+.shop-section3 {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scrolling if any */
+    margin-top: 10px;
+	
+}
+
+.shop-section3 .box31 {
+    display: inline-block;
+    width: 200px; /* Adjust as needed */
+    vertical-align: top; /* Align boxes from the top */
+    white-space: normal; /* Restore normal white space for box content */
+}
+.inline-scroll {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-y: scroll; /* Hides vertical scrolling if any */
+    width: 100%; /* Adjust as needed */
+}
+
+/* card21 */
+.box-content31{
+	background-image: url(./513aeP3u3AL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content31{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	margin-bottom: 20px;
+	
+}
+/* 22 card */
+.box-content32{
+	background-image: url(./310Buk5P5VL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content32{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 23 card */
+.box-content33{
+	background-image: url(./91KsfPik+8L._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content33{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 24 card */
+.box-content34{
+	background-image: url(./51dx61OtjxL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content34{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 25 card */
+.box-content35{
+	background-image: url(./61c5-cp7LeL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content35{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 26 card */
+.box-content36{
+	background-image: url(./71hQC2DijTL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content36{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 27 card */
+.box-content37{
+	background-image: url(./61zzvmB5WnL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content37{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 28 card */
+.box-content38{
+	background-image: url(./612VG5E7IUL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content38{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+
+/* Separate div tags */
+
+/* this is for single card */
+
+
+
+
+.shop-section4{
+	overflow-x: scroll;
+
+	flex-wrap: wrap;
+	/* justify-content: space-evenly; */
+	
+	background-color: #e2e7e6;
+	
+}
+
+
+/* .box41{
+	background-color: white;
+	height: 300px;
+	width: 23%;
+	/* border: 2px solid black; */
+	/* padding: 20px 0px 15px;
+	margin-top: 15px;
+} */ 
+.box-img{
+	height: 250px;
+	width: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.box41{
+	padding-left: 20px;
+}
+
+ .box-content41 p{
+	color: #007185;
+
+}
+
+
+
+
+.inline-scroll {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    /* Hides vertical scrolling if any */
+    width: 100%; /* Adjust as needed */
+}
+
+/* card 51 */
+.box-content51{
+	background-image: url(./61WlxskMv3L._AC_SR350\,526_FMwebp_QL65_.webp);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	
+
+}
+.box-content51{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	margin-bottom: 20px;
+	
+}
+/* 22 card */
+.box-content52{
+	background-image: url(./71Fp6O21FVL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content52{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 23 card */
+.box-content53{
+	background-image: url(./61WOSqMgoQL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content53{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 24 card */
+.box-content54{
+	background-image: url(./51LutbEJpJL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content54{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 25 card */
+.box-content55{
+	background-image: url(./61qwo9TIpNL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content55{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* 26 card */
+.box-content56{
+	background-image: url(./61zetIRiIdL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content56{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 27 card */
+.box-content57{
+	background-image: url(./911thOPD5kL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content57{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+
+/* 28 card */
+.box-content58{
+	background-image: url(./71eWwXCFzIL._AC_SY200_.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;	
+
+}
+.box-content58{
+	width: 205px;
+	height: 280px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	position: relative;
+	background-size: contain;
+	transition: background-image 0.3s ease-in-out;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+}
+/* Up to 60% off | Home furnishing | Curated from stores near you */
+.shop-section5 {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scrolling if any */
+    margin-top: 10px;
+	
+}
+
+.shop-section5 .box51 {
+    display: inline-block;
+    width: 200px; /* Adjust as needed */
+    vertical-align: top; /* Align boxes from the top */
+    white-space: normal; /* Restore normal white space for box content */
+}
+.inline-scroll {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-y: scroll; /* Hides vertical scrolling if any */
+    width: 100%; /* Adjust as needed */
+}
+
+
+/* card 61 */
+.shop-section6{
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-evenly; */
+	justify-content: space-between;
+	/* background-color: #e2e7e6;
+	 */
+}
+
+
+/* .box41{
+	background-color: white;
+	height: 300px;
+	width: 23%;
+	/* border: 2px solid black; */
+	/* padding: 20px 0px 15px;
+	margin-top: 15px;
+} */ 
+.box-img{
+	height: 250px;
+	width: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* .box-content41{
+	margin-left: 1rem;
+	margin-right: 1rem;
+} */
+/* .image{
+	display: flex;
+	justify-content: space-between;
+} */
+
+/* .hover-div {
+	height:"350px";
+	width:"300px";
+	background-color: #ccc;
+	text-align: center;
+	line-height: 100px;
+	transition: background-color 0.3s ease; /* Smooth transition effect */
+  /* }
+  
+  .hover-div:hover {
+	background-color: #aaa; /* Change background color on hover */
+  /* } */
+   /* */ 
+
+   .img-fluid:hover{
+	-ms-transform: scale(0.8s);
+	-webkit-transform: scale(1.2);
+	transform: scale(0.2s);
+}
+

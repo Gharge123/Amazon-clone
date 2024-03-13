@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Amazon Clone</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+   	<div class="navbar">
+   		<!--LOGO-->
+   		<div class="nav-logo border">
+   			<div class="logo"></div>
+   		</div>
+   		<!--Address-->
+   		<div class="nav-address border">
+   			<p class="Add1">Deliver To</p>
+   			<div class="add-icon">
+   				<i class="fa-sharp fa-solid fa-location-dot"></i>
+   				<p class="Add2">India</p>
+   			</div>
+   		</div>
+
+
+   		<!--Search-->
+   		<div class="nav-search border">
+   			<select class="search-select">
+   			<option>All</option>
+   			<option>All</option>
+   			<option>All</option>
+   			<option>All</option>
+   			<option>All</option>
+   		</select>
+   		<input type="text" name="Input" placeholder="Search Amazon" class="search-input">
+   		<div class="search-icon">
+   			<i class="fa-solid fa-magnifying-glass"></i>
+   		</div>
+   		</div>
+ 
+         <!--Box-4-->
+
+         <div class="nav-signin border">
+         	<p><span>Hello,Sign in</span>  </p>
+         	<p class="nav-second"> Acoounts & Lists</p>
+         </div>
+          <div class="nav-returns border">
+         	<p><span>Returns</span>  </p>
+         	<p class="nav-second">& Orders</p>
+         </div>
+
+         <!--Cart-->
+         <div class="nav-cart border">
+         <i class="fa-solid fa-cart-shopping"></i>
+         Cart
+         </div>
+		</div>	
+			<!--Panel-->
+			<div class="panel">
+			  <div class="panel-all">
+				<i class="fa-solid fa-bars"></i>
+				All
+			  </div>
+			  <div class="panel-ops">
+				
+					<p>Today's Deals</p>
+					<p>Customer Services</p>
+					<p>Registary</p>
+					<p>Gift Cards</p>
+					<p>Sells</p>
+				
+			  </div>
+			  <div class="panel-deals">
+				Shop Deals in Electronics
+			  </div>
+			</div>
+				
+			
+			
+	</header>
+	
+	<!--Hero Section-->
+	
+	 <!-- <div class="hero-section">
+		<div class="hero-content">
+			<p>Up to 50% off | Wireless products from stores near you Up to 50% off | Wireless products Up to 50% offUp to 50% off</p>
+		</div>
+	</div>  -->
+	<div class="slider">
+		<div class="slide active"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Beauty/GW/Jan/unrecatf/citi/Makeup-PCcv._CB584595621_.jpg" alt="" width="100%" height="500px"></div>
+		<div class="slide"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Consumables/X-GL/Feb5/PC_Hero_1_3000._CB582457311_.jpg" alt="" width="100%" height="500px"></div>
+		<div class="slide"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/GATEWAY/BXGY/Feb/BXGY_2X_PC._CB581582274_.jpg" alt="" width="100%" height="500px"></div>
+		<div class="slide active"><img src=https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/jan2024/Bau/Unrec/Citi/Shoes/Frame_386_3000pc._CB584585056_.jpg alt="" width="100%" height="500px"></div>
+		<div class="slide"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/jan24atf/unrec/citi/pc-2_2x._CB584618827_.jpg" alt="" width="100%" height="500px"></div>
+		<div class="slide"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/GATEWAY/BXGY/Feb/BXGY_2X_PC._CB581582274_.jpg" alt="" width="100%" height="500px"></div>
+		<div class="slide active"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24hp/unrec/hero/Under_1499_Tallhero_3000x1200._CB581597259_.jpg" alt="" width="100%" height="500px"></div>
+		<div class="slide"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Beauty/GW/Jan/unrecatf/citi/Skincare-PCgf._CB584595621_.jpg" alt="" width="100%" height="500px"></div>
+		<div class="slide"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/24/BAU/feb/PC_hero_1_2x_1._CB582889946_.jpg" alt="" width="100%" height="500px"></div>
+		
+		<button class="prev" onclick="prevSlide()">Previous</button>
+		<button class="next" onclick="nextSlide()">Next</button>
+	  </div>
+	  
+
+	<!--Shop Section-->
+
+	   <div class="shop-section" style="margin-top: 20px;margin-bottom: 20px;">
+
+	   <div class="box" style="border-radius: 10px;"><h2>Beauty Products</h2>
+		<div class="box-content1">
+			<p>See more</p>
+		</div>
+	    </div>	
+       <div class="box" style="border-radius: 10px;"> <h2>Health & Personal Care</h2>
+	   	<div class="box-content2">
+	        <p>See more</p>
+	   	</div>
+	   </div>
+	   <div class="box" style="border-radius: 10px;"><h2>Furniture</h2>
+	   	<div class="box-content3">
+	        <p>See more</p>
+	   	</div>
+	   </div>
+	   <div class="box4 box" style="border-radius: 10px;"><h2>Electronics</h2>
+	   	<div class="box-content4">
+	         <p>See more</p>
+	   	</div>
+	   </div>	
+	   <div class="box1 box" style="border-radius: 10px;"><h2>Beauty picks</h2>
+	   	<div class="box-content5">
+	         <p>See more</p>
+	   	</div>
+	   </div>
+	   <div class="box2 box" style="border-radius: 10px;"><h2>Pet care</h2>
+	   	<div class="box-content6">
+	         <p>See more</p>
+	   	</div>
+	   </div>
+	   <div class="box3 box" style="border-radius: 10px;"><h2>New Arrival in Toys</h2>
+	   	<div class="box-content7">
+	         <p>See more</p>
+	   	</div>
+	   </div>
+	   <div class="box4 box" style="border-radius: 10px;"><h2>Discover Fashion Tools</h2>
+	   	<div class="box-content8">
+	          <p>See more</p>
+	   	</div>
+	   </div>	
+	   
+	</div>
+	
+	<!-- Todays Deal -->
+	<h2 style="font-weight: bold;margin-top: 10px;">Today's Deals &nbsp;See all Deal</h2>
+	<div class="shop-section1" style="height: 500;background-color: aliceblue;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;margin-bottom: 20px;overflow: scroll;scrollbar-width: thin;">
+		<div class="box11">
+			 <div class="box-content11">
+			 </div>
+			 <p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 72% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;margin-bottom: 20px;">Branded Suitcase, Backpacks..</p> 
+		 </div> 
+		 <!-- Remaining .box elements -->
+
+		 <div class="box11">
+			<div class="box-content12">
+			</div>
+			<p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 52% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;">Best Offers from Top Brands</p>
+		</div> 
+		<div class="box11">
+			<div class="box-content13">
+			</div>
+			<p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 52% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;">Best Offers from Top Brands</p>
+		</div> 
+		<div class="box11">
+			<div class="box-content14">
+			</div>
+			<p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 52% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;">Best Offers from Top Brands</p>
+		</div> 
+		<div class="box11">
+			<div class="box-content15">
+			</div>
+			<p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 52% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;">Best Offers from Top Brands</p>
+		</div> 
+		<div class="box11">
+			<div class="box-content16">
+			</div>
+			<p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 52% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;">Best Offers from Top Brands</p>
+		</div>  
+		
+		<div class="box11">
+			<div class="box-content17">
+			</div>
+			<p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 52% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;">Best Offers from Top Brands</p>
+		</div>  
+		<div class="box11">
+			<div class="box-content18">	
+			</div>
+			<p style="background-color: red;color: azure;font-weight: bold;font-size: 14px;">Up to 52% off&nbsp;Limited time Deal</p>
+				<p style="font-size: 12px;">Best Offers from Top Brands</p>
+		</div> 
+        
+		
+	 
+		 <!-- Your other content -->
+	 
+	 </div>
+	 
+	 <div class="inline-scroll">
+		 <!-- Your inline content here -->
+	 </div>
+	 
+	 
+	<!-- related to items you've viewed -->
+	<h2 style="font-weight: bold;margin-top: 10px;">Up to 60% Off | Home furnishing | Curated from stores near you</h2>
+	<div class="shop-section2" style="height: 500;background-color: aliceblue; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;margin-bottom: 20px;overflow: scroll;scrollbar-width: thin;">
+	<marquee behavior=""  direction="left" scrollamount="15">
+		<div class="box21">
+			 <div class="box-content21">
+				 </div>
+		 </div> 
+		 <!-- Remaining .box elements -->
+		 <div class="box21">
+			<div class="box-content22">
+				</div>
+		</div> 
+		<div class="box21">
+			<div class="box-content23">
+				</div>
+		</div> 
+		<div class="box21">
+			<div class="box-content24">
+				</div>
+		</div> 
+		<div class="box21">
+			<div class="box-content25">
+				</div>
+		</div> 
+		<div class="box21">
+			<div class="box-content26">
+				</div>
+		</div>  
+		
+		<div class="box21">
+			<div class="box-content27">
+				</div>
+		</div>  
+		<div class="box21">
+			<div class="box-content28">
+				</div>
+		</div> 
+        
+	</marquee>
+	 
+		 <!-- Your other content -->
+		
+	 </div>
+	
+	 <div class="inline-scroll">
+		 <!-- Your inline content here -->
+	 </div>
+	 <!-- Up to 60% off | Home furnishing | Curated from stores near you -->
+	 <h2 style="font-weight: bold;margin-top: 10px;">Up to 60% Off | Kitchen appliances | Curated from stores near you</h2>
+	 <div class="shop-section3" style="height: 500;background-color: aliceblue;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	 border-radius: 10px;margin-bottom: 20px;overflow: scroll;scrollbar-width: thin;">
+	 <marquee behavior=""  direction="left" scrollamount="15">
+		<div class="box31">
+			 <div class="box-content31">
+				 </div>
+		 </div> 
+		 <!-- Remaining .box elements -->
+		 <div class="box31">
+			<div class="box-content32">
+				</div>
+		</div> 
+		<div class="box31">
+			<div class="box-content33">
+				</div>
+		</div> 
+		<div class="box31">
+			<div class="box-content34">
+				</div>
+		</div> 
+		<div class="box31">
+			<div class="box-content35">
+				</div>
+		</div> 
+		<div class="box31">
+			<div class="box-content36">
+				</div>
+		</div>  
+		
+		<div class="box31">
+			<div class="box-content37">
+				</div>
+		</div>  
+		<div class="box31">
+			<div class="box-content38">
+				</div>
+		</div> 
+        
+		
+	</marquee>
+		 <!-- Your other content -->
+	 
+	 </div>
+	 
+	 <div class="inline-scroll">
+		 <!-- Your inline content here -->
+	 </div> 
+	 
+	 <!-- <h2 style="font-weight: bold;margin-top: 10px;">Up to 60% Off | Keep Shopping For | Curated from stores near you</h2>
+	 <div class="shop-section4">
+	
+        
+		<div class="box41" style="display: grid;grid-template-columns: 2fr 2fr ;">
+			<img src="./71BLkd39VKL._AC_SY170_.jpg" alt="" height="180px" width="130px" >
+			<img src="./61kIVnGChCL._AC_SY170_.jpg" alt="" height="180px" width="130px">
+			<img src="./71gSvhLIJZL._AC_SY170_.jpg" alt="" height="180px" width="130px" >
+			<img src="./612JvadSUzL._AC_SY170_.jpg" alt="" height="180px" width="130px">
+
+		 <div class="box-content41">
+			 <p>See more</p>
+		 </div>
+		 </div>	
+		 <div class="box41" style="display: grid;grid-template-columns: 2fr 2fr;">
+			<img src="./616iBhe2roL._AC_SY145_.jpg" alt="" height="180px" width="130px" >
+			<img src="./61dazA6znQL._AC_SY145_.jpg" alt="" height="180px" width="130px">
+			<img src="./71RshCYtnCL._AC_SY145_.jpg" alt="" height="180px" width="130px" >
+			<img src="./71jdHphMtrL._AC_SY145_.jpg" alt="" height="180px" width="130px">
+
+		 <div class="box-content41">
+			 <p>See more</p>
+		 </div>
+		 </div>	
+		 <div class="box41" style="display: grid;grid-template-columns: 2fr 2fr;background-color: rgb(141, 134, 134);">
+			<img src="./6118IM+segL._AC_SY95_.jpg" alt="" height="180px" width="130px" >
+			<img src="./71eWwXCFzIL._AC_SY200_.jpg" alt="" height="180px" width="130px">
+			<img src="./81Rc7EpmK4L._AC_SY95_.jpg" alt="" height="180px" width="130px" >
+			<img src="./819uVnRmdyL._AC_SY95_.jpg" alt="" height="180px" width="130px">
+
+		 <div class="box-content41">
+			 <p>See more</p>
+		 </div>
+		 </div>	
+		 <div class="box41" style="display: grid;grid-template-columns: 2fr 2fr;">
+			<img src="./QC-adapts_186x116_4._SY116_CB600489960_.jpg" alt="" height="180px" width="130px" >
+			<img src="./QC-adapts_186x116_3._SY116_CB600489960_.jpg" alt="" height="180px" width="130px">
+			<img src="QC-adapts_186x116_7._SY116_CB600489960_.jpg" alt="" height="180px" width="130px" >
+			<img src="./QC-adapts_186x116_5._SY116_CB600489960_.jpg" alt="" height="180px" width="130px">
+
+		 <div class="box-content41">
+			 <p>See more</p>
+		 </div>
+		 </div>	
+		 <-- add -->
+		 <!-- <div class="box41" style="display: grid;grid-template-columns: 2fr 2fr;">
+			<img src="./MF-1-186-116._SY116_CB636110853_.jpg" alt="" height="180px" width="130px" >
+			<img src="MF-2-186-116._SY116_CB636110853_.jpg" alt="" height="180px" width="130px">
+			<img src="MF-3-186-116._SY116_CB636110853_.jpg" alt="" height="180px" width="130px" >
+			<img src="MF-4-186-116._SY116_CB636110853_.jpg" alt="" height="180px" width="130px">
+
+		 <div class="box-content41">
+			 <p>See more</p>
+		 </div>
+		 </div>	
+		  -->
+		 <!-- <div class="inline-scroll"> -->
+		 <!-- Your inline content here -->
+	 <!-- </div> 
+</div>  -->
+    <h2 style="font-weight: bold;margin-top: 10px;">Up to 60% Off | Keep Shopping For | Curated from stores near you</h2>
+	<!-- <div class="shop-section4" style="display: flex;"> -->
+	<div class="shop-section4"  style="display: flex;flex-wrap: nowrap;scrollbar-width: thin;">
+		<div class="block1 " style="height: 450px;width: 600px;background-color: #f4f4f4;border-radius: 4px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div class="box41" style="display: flex;">
+				<div><img src="./71BLkd39VKL._AC_SY170_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+				<p style="font-size: 13px;">ANNI DESIGNER </p>
+				<p> ₹699</p>
+				</div>
+				<div><img src="./61kIVnGChCL._AC_SY170_.jpg" alt="" height="160" width="100" style="margin-top: 15px;border-radius: 8px;">
+				<p style="font-size: 13px;">GOSRIKI WOMEN'S</p>
+				<p> ₹659</p>
+				</div>
+			</div>
+			<div class="box41" style="display: flex;">
+				<div><img src="./71gSvhLIJZL._AC_SY170_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 20px;border-radius: 8px;">
+				<p style="font-size: 13px;">LERIYA FASHION</p>
+				<p> ₹509</p>
+				</div>
+				<div><img src="./612JvadSUzL._AC_SY170_.jpg" alt="" height="160" width="100" style="margin-top: 15px;border-radius: 8px;margin-right: 20px">
+					<p style="font-size: 13px;">ANNI DESIGNER </p>
+					<p> ₹699</p>
+				</div>
+			</div>
+		</div>
+		<div class="block2" style="height: 450px;width: 600px;background-color: #f4f4f4;border-radius: 4px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div class="box41" style="display: flex;">
+				<div><img src="./616iBhe2roL._AC_SY145_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+				<p style="font-size: 13px;">Combo Shirts</p>
+				<p>₹499</p>
+				</div>
+				<div><img src="./61dazA6znQL._AC_SY145_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+				<p style="font-size: 13px;">Lorem, ipsum dolor.</p>
+				</div>
+			</div>
+			<div class="box41" style="display: flex;">
+				<div><img src="./71RshCYtnCL._AC_SY145_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;" >
+				<p style="font-size: 13px;">Lorem, ipsum dolor.</p>
+				</div>
+				<div><img src="./71jdHphMtrL._AC_SY145_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+				<p style="font-size: 13px;">Lorem, ipsum dolor.</p>
+				</div>
+			</div>
+		</div>
+		<div class="block3" style="height: 450px;width: 600px;background-color: #f4f4f4;border-radius: 4px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div class="box41" style="display: flex;">
+			  <div><img src="./6118IM+segL._AC_SY95_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;" >
+			     <p>ANNI DESIGNER</p>
+			</div>
+			  <div><img src="./71eWwXCFzIL._AC_SY200_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+			     <p>Lorem, ipsum dolor.</p>
+			</div>
+			</div>
+			<div class="box41" style="display: flex;">
+				<div><img src="./81Rc7EpmK4L._AC_SY95_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;" >
+				<p>Lorem, ipsum dolor.</p>
+				</div>
+				<div><img src="./819uVnRmdyL._AC_SY95_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+				<p>Lorem, ipsum dolor.</p>
+				</div>
+			</div>
+		</div>
+		<div class="block4" style="height: 450px;width: 600px;background-color: #f4f4f4;border-radius: 4px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div class="box41" style="display: flex;">
+			  <div><img src="./QC-adapts_186x116_4._SY116_CB600489960_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;" >
+			     <p style="font-size: 15px;">Cleaning Spin mops, wipes & more</p>
+			</div>
+			  <div><img src="./QC-adapts_186x116_3._SY116_CB600489960_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+			     <p style="font-size: 15px;">Bathroom hardware & accessories</p>
+			</div>
+			</div>
+			<div class="box41" style="display: flex;">
+				<div><img src="QC-adapts_186x116_7._SY116_CB600489960_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;" >
+				<p style="font-size: 15px;">Hammers, screwdrivers</p>
+				</div>
+				<div><img src="./QC-adapts_186x116_5._SY116_CB600489960_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+				<p style="font-size: 15px;">Extention boards</p>
+				</div>
+			</div>
+		</div>
+		<div class="block5" style="height: 450px;width: 600px;background-color: #f4f4f4;border-radius: 4px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div class="box41" style="display: flex;">
+			  <div><img src="./MF-1-186-116._SY116_CB636110853_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;" >
+			     <p style="font-size: 15px;">Clothing</p>
+			</div>
+			  <div><img src="MF-2-186-116._SY116_CB636110853_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+			     <p style="font-size: 15px;">Footwear</p>
+			</div>
+			</div>
+			<div class="box41" style="display: flex;">
+				<div><img src="MF-3-186-116._SY116_CB636110853_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;" >
+				<p style="font-size: 15px;">Watches</p>
+				</div>
+				<div><img src="MF-4-186-116._SY116_CB636110853_.jpg" alt="" height="160" width="100" style="margin-top: 15px;margin-right: 15px;border-radius: 8px;">
+				<p style="font-size: 15px;">Bags & Wallets</p>
+				</div>
+			</div>
+		</div>
+	
+	    <div class="inline-scroll"> 
+		<!-- Your inline content here -->
+     	</div> 
+
+</div>
+
+
+
+	<!-- vedio games and books -->
+	<h2 style="font-weight: bold;margin-top: 10px;margin-top: 20px;margin-bottom: 20px;">Up to 60% Off | Girls Make-Up Kit  | Curated from stores near you</h2>
+	<div  class="shop-section5" style="height: 500;background-color: aliceblue;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;margin-bottom: 20px;overflow: scroll;scrollbar-width: thin;">
+	<marquee behavior=""  direction="left" scrollamount="15">
+		<div class="box51">
+			 <div class="box-content51">
+				<p>See more</p><br><br>
+				
+			 </div>
+		 </div> 
+		 <!-- Remaining .box elements -->
+		 <div class="box51">
+			<div class="box-content52">
+				<p>See more</p>
+				
+			</div>
+		</div> 
+		<div class="box51">
+			<div class="box-content53">
+				<p>See more</p>
+				
+			</div>
+		</div> 
+		<div class="box51">
+			<div class="box-content54">
+				<p>See more</p>
+				
+			</div>
+		</div> 
+		<div class="box51">
+			<div class="box-content55">
+				<p>See more</p>
+				
+			</div>
+		</div> 
+		<div class="box51">
+			<div class="box-content56">
+				<p>See more</p>
+				
+			</div>
+		</div>  
+		
+		<div class="box51">
+			<div class="box-content57">
+				<p>See more</p>
+				
+			</div>
+		</div>  
+		<div class="box51">
+			<div class="box-content58">
+				<p>See more</p>
+				
+			</div>
+		</div> 
+       <!-- Your other content -->
+	</marquee>
+	 </div>
+	 
+	 <div class="inline-scroll">
+		 <!-- Your inline content here -->
+	 </div> 
+
+	 <!-- Dresses -->
+	 <div class="shop-section6">
+	
+
+		<div class="box61" height="340" width="290px" style="background-color:#f4f4f4;border-radius: 10px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div>
+				<p style="font-size: 20px;font-weight: bold;text-align: center;margin-top: 50px;">Business Start Up: Ideas | <br>Watch only on miniTV</p>
+			</div>
+			
+			<!-- <img src="./1199101_379x304_Compressed._SY304_CB448278349_.jpg" alt="" height="300" width="290px"> -->
+			<video src="./pexels-rodnae-productions-7414165 (1080p).mp4" controls height="300" width="300px">
+			</video>
+			<div>
+				<p style="font-weight: bold;font-size: 20px;text-align: center;">Watch For FREE | miniTV</p>
+			</div><br>
+			<div>
+				<a href="https://www.youtube.com/watch?v=bNpx7gpSqbY" style="color: rgb(33, 23, 168);font-weight: bold;">Watch more FREE content | only on miniTV</a>
+			</div><br><br>
+		 </div>	
+		<div class="block" style="background-color:#f4f4f4;border-radius: 10px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div>
+				<p style="font-size: 18px;font-weight: bold;text-align: center;margin-top: 15px;">Business Start Up Ideas| <br>Watch only on miniTV</p>
+			</div>
+				<div style="display: flex;">
+				  <div><img src="./WF1-186-116._SY116_CB636048992_.jpg" alt="" height="150px" width="120px" style="margin-right: 20px;margin-left: 20px;margin-top: 20px;border-radius: 10px;">
+					 
+				</div> 
+				  <div><img src="WF2-186-116._SY116_CB636048992_.jpg" alt="" height="150px" width="120px" style="margin-top: 20px;border-radius: 10px;">
+					 
+				</div>
+				</div>
+				<div style="display: flex;">
+					<div><img src="WF4-186-116._SY116_CB636048992_.jpg" alt=""  height="150px" width="120px" style="margin-right: 20px;margin-left: 20px;margin-top: 20px;border-radius: 10px;">
+					
+					</div>
+					<div><img src="WF3-186-116._SY116_CB636048992_.jpg" alt=""  height="150px" width="120px" style="margin-top: 20px;border-radius: 10px;">
+					</div>
+				</div>
+				<div>
+					<p style="font-weight: bold;font-size: 20px;text-align: center;">Watch For FREE | miniTV</p>
+				</div><br>
+				<div>
+					<a href="https://www.youtube.com/watch?v=bNpx7gpSqbY" style="color: rgb(48, 26, 143);font-weight: bold;">Watch more FREE content | only miniTV</a>
+				</div>
+		</div>
+			<div class="block" style="background-color:#f4f4f4;border-radius: 10px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+				<div>
+					<p style="font-size: 18px;font-weight: bold;text-align: center;margin-top: 20px;">Business Start Up Ideas| <br>Watch only on miniTV</p>
+				</div>
+				<div style="display: flex;">
+					<div><img src="./PC_QC_372X232_Ref_Brand_01_1x._SY116_CB581731653_.jpg" alt="" height="150px" width="120px" style="margin-right: 20px;margin-left: 20px;margin-top: 20px;border-radius: 10px;">
+					 
+				</div>
+				  <div><img src="PC_QC_372X232_Ref_Brand_02_1x._SY116_CB581731653_.jpg" alt=""  height="150px" width="120px" style="margin-top: 20px;border-radius: 10px;">
+					 
+				</div>
+				</div>
+				<div style="display: flex;">
+					<div><img src="PC_QC_372X232_Ref_Brand_03_1x._SY116_CB581731653_.jpg" alt="" height="150px" width="120px" style="margin-right: 20px;margin-left: 20px;margin-top: 20px;border-radius: 10px;" >
+					
+					</div>
+					<div><img src="PC_QC_372X232_Ref_Brand_04_1x._SY116_CB581731653_.jpg" alt=""  height="150px" width="120px" style="margin-top: 20px;border-radius: 10px;">
+					</div>
+				</div>
+				<div>
+					<p style="font-weight: bold;font-size: 20px;text-align: center;">Watch For FREE | miniTV</p>
+				</div><br>
+				<div>
+					<a href="https://www.youtube.com/watch?v=bNpx7gpSqbY" style="color: rgb(62, 21, 156);font-weight: bold;">Watch more FREE content | only miniTV</a>
+				</div>
+
+			</div>
+
+	
+		 <!-- <div class="box61" >
+			<img src="./81hHBor9hUL._AC_SY200_.jpg" alt=""  height="300" width="290px">
+		 </div>	 -->
+		 <div class="box61" height="300" width="290px" style="background-color:#f4f4f4;border-radius: 10px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			<div>
+				<p style="font-size: 20px;font-weight: bold;text-align: center;margin-top: 50px;">Business Start Up Ideas| <br>Watch only on miniTV</p>
+			</div>
+			
+			<!-- <img src="./1199101_379x304_Compressed._SY304_CB448278349_.jpg" alt="" height="300" width="290px"> -->
+			<video src="./pexels-rodnae-productions-7413685 (Original).mp4" controls height="300" width="300px" style="margin-left: 20px;">
+			</video>
+			<div>
+				<p style="font-weight: bold;font-size: 20px;text-align: center;">Watch For FREE | miniTV</p>
+			</div><br>
+			<div>
+				<a href="https://www.youtube.com/watch?v=w4pw4jHf3TA" style="color: rgb(51, 40, 153);font-weight: bold;">Watch more FREE content | only miniTV</a>
+			</div>
+		 </div>	
+		 <!-- add -->
+		
+		 
+		 <div class="inline-scroll">
+		 <!-- Your inline content here -->
+	 </div> 
+</div>
+
+
+<!-- offers -->
+<div style="display: flex;background-color: rgb(253, 241, 227);overflow: scroll;scrollbar-width: thin;" height="350" width="300px">
+	<div style="padding: 30px;border-radius: 10px;background-color: black;margin-top: 10px;margin-right: 20px;margin-bottom: 20px; height: 350px;width: 300px;">
+		<p style="font-size: 20px;font-weight: bold;color: aliceblue;margin-bottom: 40px;">Min. 50% off | Outdoor <br>solar lights</p>
+        <div style="display: flex;">
+			<div><img src="home.jpg" alt="" height="" height="220px" width="150px" style="border-radius: 10px;margin-right: 6px;">
+			<div>
+				<p style="color: aliceblue;font-size: 18px;font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">All Conditioner</p>
+			</div>
+		    </div>
+			<div><img src="refri.jpg" alt="" height="" height="220px" width="150px" style="border-radius: 10px;">
+			<div>
+				<p style="color: aliceblue;font-size: 18px;font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Refrigerator</p>
+			</div>
+		    </div>
+		</div>
+		<div style="display: flex;">
+			<div><img src="Tv.jpg" alt="" height="" height="220px" width="150px" style="border-radius: 10px;margin-right: 6px;">
+			<div>
+				<p style="color: aliceblue;font-size: 18px;font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Microwaves</p>
+			</div>
+		    </div>
+			<div><img src="washing.jpg" alt="" height="" height="220px" width="150px" style="border-radius: 10px;">
+			<div>
+				<p style="color: aliceblue;font-size: 18px;font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Washing Machine</p>
+			</div>
+		    </div>
+		</div>
+	</div> 
+		<!-- 2 nd div -->
+	<div   style="padding: 30px;border-radius: 10px;background-color: black;margin-top: 10px;margin-right: 20px;margin-bottom: 20px;">
+        <div>
+			<p style="font-size: 20px;font-weight: bold;color: aliceblue;">Min. 50% off | Outdoor <br>solar lights</p>
+		   </div>
+		   <div>
+			<img src="dip.jpg" alt="" height="" height="500px" width="300px">
+		   </div>
+		   <div>
+			<p style="color: aqua;cursor: pointer;">see more</p>
+		</div>
+	</div>
+	<div    style="padding: 30px;border-radius: 10px;background-color: black;margin-top: 10px;margin-right: 20px;margin-bottom: 20px;">
+        <div>
+			<p style="font-size: 20px;font-weight: bold;color: aliceblue;">Up to 50% off | <br>International brands</p>
+		   </div>
+		   <div>
+			<img src="temp.jpg" alt="" height="" height="500px" width="300px">
+		   </div>
+		   <div>
+			<p style="color: aqua;cursor: pointer;">see more</p>
+		</div>
+	</div>
+	<div   style="padding: 30px;border-radius: 10px;background-color: black;margin-top: 10px;margin-right: 20px;margin-bottom: 20px;">
+        <div>
+			<p style="font-size: 20px;font-weight: bold;color: aliceblue;">Starting ₹99 | <br>Start your fitness journey</p>
+		   </div>
+		   <div>
+			<img src="boxx.jpg" alt="" height="" height="500px" width="300px">
+		   </div>
+		   <div>
+			<p style="color: aqua;cursor: pointer;">see more</p>
+		</div>
+	</div>
+</div>
+
+<!-- EMI starting at ₹105/day | Electric motorbike & scooters -->
+<h2 style="margin-top: 20px;margin-bottom: 20px;">EMI starting at ₹105/day | Electric motorbike & scooters</h2>
+<div style="display: flex;overflow: scroll;scrollbar-width: thin;">
+	
+	<div>
+       <img src="bike.jpg" alt="" width="210px" height="280px">
+	</div>
+	<div>
+		<img src="bike.jpg" alt="" width="210px" height="280px">
+	</div>
+	<div>
+		<img src="bike1.jpg" alt="" width="210px" height="280px">
+	</div>
+	<div>
+		<img src="bike2.jpg" alt="" width="210px" height="280px">
+	</div>
+	<div>
+		<img src="bike3.jpg" alt="" width="190px" height="210px" style="margin-right: 20px;">
+	</div>
+	<div>
+		<img src="bike4.jpg" alt="" width="190px" height="200px" style="margin-right: 20px;">
+	</div>
+	<div>
+		<img src="bike5.jpg" alt=""  width="190px" height="190px" style="margin-right: 20px;">
+	</div>
+	<div>
+		<img src="bike6.jpg" alt=""  width="140px" height="200px" style="margin-right: 20px;">
+	</div>
+	<div>
+		<img src="bike7.jpg" alt="" width="140px" height="200px" style="margin-right: 20px;">
+	</div>
+	
+</div><br>
+
+<!-- medicines -->
+<h2 style="font-weight: bold;margin-top: 10px;margin-bottom: 20px;">Up to 60% Off | Medicines Kit Care | Curated from stores near you</h2>
+<div style="display: flex; justify-content: space-between;background-color: #f4f4f4;border-radius: 4px; margin-top: 20px;margin-bottom: 20px;margin-left: 20px;margin-right: 20px;" width="190px" height="240px" >
+	<!-- <div width="190px" height="240px" style="margin-right: 10px;justify-content: space-between;border-radius: 8px;margin-left: 20px;"> 
+		-->
+	<div style="padding: 10px;border-radius: 10px;background-color: rgb(248, 242, 242);margin-top: 10px;margin-right: 20px;margin-bottom: 20px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+	   <img src="medi.jpg" alt="" width="190px" height="240px">
+	   <div>
+		<p style="display: flex;">Gynoveda Delayed Irregular Periods Ayurvedic Medicine, 25 Premium Herbs | TULHA 1 Bottle 120 Tablets, Pack of 120gm</p>
+	   </div>
+	</div>
+	
+	<div style="padding: 10px;border-radius: 10px;background-color: rgb(248, 242, 242);margin-top: 10px;margin-right: 20px;margin-bottom: 20px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+		<img src="medi1.jpg" alt="" width="190px" height="240px">
+		<div>
+			<p style="display: flex;">Gynoveda Delayed Irregular Periods Ayurvedic Medicine, 25 Premium Herbs | TULHA 1 Bottle 120 Tablets, Pack of 120gm</p>
+		</div>
+	</div>
+	<div style="padding: 10px;border-radius: 10px;background-color: rgb(248, 242, 242);margin-top: 10px;margin-right: 20px;margin-bottom: 20px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+		<img src="medi2.jpg" alt="" width="190px" height="240px" >
+		<div>
+			<p style="display: flex;">Gynoveda Delayed Irregular Periods Ayurvedic Medicine, 25 Premium Herbs | TULHA 1 Bottle 120 Tablets, Pack of 120gm</p>
+		</div>
+	</div>
+	<div style="padding: 10px;border-radius: 10px;background-color: rgb(248, 242, 242);margin-top: 10px;margin-right: 20px;margin-bottom: 20px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+		<img src="medi3.jpg" alt="" width="150px" height="240px" >
+		<div>
+			<p style="display: flex;">Gynoveda Delayed Irregular Periods Ayurvedic Medicine, 25 Premium Herbs | TULHA 1 Bottle 120 Tablets, Pack of 120gm</p>
+		</div>
+	</div>
+	<div style="padding: 10px;border-radius: 10px;background-color: rgb(248, 242, 242);margin-top: 10px;margin-bottom: 20px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+		<img src="medi4.jpg" alt="" width="190px" height="240px">
+		<div>
+			<p style="display: flex;">Gynoveda Delayed Irregular Periods Ayurvedic Medicine, 25 Premium Herbs | TULHA 1 Bottle 120 Tablets, Pack of 120gm</p>
+		</div>
+	</div>
+</div>
+
+
+    <!-- inspired by your browsing history -->
+<div class="shop-section6" style="display: grid;grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;background-color:#f4f4f4;border-radius: 4px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+	
+
+		<div class="box61 " >
+			<img  src="sofa.jpg" alt="" height="300" width="200px" class="img-fluid" style="background-color:#f4f4f4;border-radius: 4px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			
+			<div class="box-content61">
+			 <u style="color: aliceblue;margin-bottom: 3px;"><p style="color:rgb(36, 28, 156);cursor: pointer;display: flex;margin-left: 20px;">See more</p></u>
+			 <p style="display: flex;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 20px;">Blue Heaven Oil Control Compact Powder for All Skin types, SPF 25, Matte Finish, Honey 301, 8 gm
+				Blue Heaven Oil Control Compact Powder fo All Skin types, SPF 25, Matte Finish, Honey </p>
+		 </div>
+		 </div>	
+		 <div class="box61" >
+			<img src="./41auABy8T7L._AC_UL160_SR160,160_.jpg" alt="" height="300" width="200px" class="img-fluid" style="background-color:#f4f4f4;border-radius: 4px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;"">
+			
+			<div class="box-content61">
+				<u style="color: aliceblue;margin-bottom: 3px;"><p style="color:rgb(74, 66, 185);cursor: pointer;margin-left: 20px;">See more</p></u>
+			 <p style="display: flex;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 20px;">Blue Heaven Oil Control Compact Powder for All Skin types, SPF 25, Matte Finish, Honey 301, 8 gm
+				Blue Heaven Oil Control Compact Powder fo All Skin types, SPF 25, Matte Finish, Honey </p>
+		 </div>
+		 </div>	
+		 <div class="box61" >
+			<img src="./71ab3w+RmkL._AC_UL160_SR160,160_.jpg" alt="" height="300" width="200px" class="img-fluid" style="background-color:#f4f4f4;border-radius: 4px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;">
+			
+			<div class="box-content61">
+				<u style="color: aliceblue;margin-bottom: 3px;"><p style="color:rgb(48, 38, 185);cursor: pointer;margin-left: 20px;">See more</p></u>
+			 <p style="display: flex;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 20px;">Blue Heaven Oil Control Compact Powder for All Skin types, SPF 25, Matte Finish, Honey 301, 8 gm
+				Blue Heaven Oil Control Compact Powder fo All Skin types, SPF 25, Matte Finish, Honey </p>
+		 </div>
+		 </div>	
+		 <div class="box61" >
+			<img src="./61aupFud07L._AC_UL160_SR160,160_.jpg" alt=""  height="300" width="200px" class="img-fluid" style="background-color:#f4f4f4;border-radius: 4px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;"">
+
+		 <div class="box-content61">
+			<u style="color: aliceblue;margin-bottom: 3px;"><p style="color:rgb(36, 34, 167);cursor: pointer;margin-left: 20px;">See more</p></u>
+			 <p style="display: flex;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 20px;">Blue Heaven Oil Control Compact Powder for All Skin types, SPF 25, Matte Finish, Honey 301, 8 gm
+				Blue Heaven Oil Control Compact Powder fo All Skin types, SPF 25, Matte Finish, Honey </p>
+		 </div>
+		 </div>	
+		 <div class="box61" >
+			<img src="./61zetIRiIdL._AC_UL160_SR160,160_.jpg" alt=""  height="300" width="200px" class="img-fluid" style="background-color:#f4f4f4;border-radius: 4px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;"">
+
+		 <div class="box-content61">
+			<u style="color: aliceblue;margin-bottom: 3px;"><p style="color:rgb(61, 31, 167);cursor: pointer;margin-left: 20px;">See more</p></u>
+			 <p style="display: flex;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 20px;">Blue Heaven Oil Control Compact Powder for All Skin types, SPF 25, Matte Finish, Honey 301, 8 gm
+				Blue   Oil Control Compact Powder fo All Skin types, SPF 25, Matte Finish, Honey </p>
+		 </div>
+		 </div>	
+		 <div class="box61" >
+			<img src="./911thOPD5kL._AC_UL160_SR160,160_.jpg" alt=""  height="300" width="200px" class="img-fluid" style="background-color:#f4f4f4;border-radius: 4px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);margin-top: 20px;margin-bottom: 20px;margin-left: 20px;"">
+
+		 <div class="box-content61">
+			<u style="color: aliceblue;margin-bottom: 3px;"><p style="color:rgb(60, 38, 160);cursor: pointer;margin-left: 20px;">See more</p></u>
+			 <p style="display: flex;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 20px;">Blue Heaven Oil Control Compact Powder for All Skin types, SPF 25, Matte Finish, Honey 301, 8 gm
+				Blue Heaven Oil Control Compact Powder fo All Skin types, SPF 25, Matte Finish, Honey </p>
+		 </div>
+		 </div>	
+		 
+		 <!-- add -->
+		
+		 
+		 <div class="inline-scroll">
+		 <!-- Your inline content here -->
+	 </div> 
+</div>
+<div style="text-align: center;font-size: 14px;">
+	<p>See personalized recommendations</p>
+</div>
+<input type="submit" value="Sign In" style="margin-left: 540px;padding: 6px;font-weight: bold;font-size: 14px;cursor: pointer;background:linear-gradient(to bottom,rgb(243, 243, 102),rgb(228, 169, 59));border-color: orange;width: 20%;border-radius: 8px;">
+<p style="text-align: center;font-size: 12px;">New customer? Start here.</p>
+	
+	<!--Footer-->
+	<footer>
+		<div class="foot-panel1">
+			Back to Top
+		</div>
+		<div class="foot-panel2">
+			<ul>
+			<p>Get TO know us</p>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			</ul>
+			<ul>
+			<p>Get TO know us</p>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			</ul>
+			<ul>
+			<p>Get TO know us</p>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			</ul>
+			<ul>
+			<p>Get TO know us</p>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			<a>Amazon</a>
+			</ul>
+		</div>
+		
+		<div class="foot-panel3">
+			<div class="logo">
+				
+			</div>
+		</div>
+		<div class="foot-panel4">
+			<div class="pages">
+				<a>Condition of use</a>
+				<a>Privacy Notice</a>
+				<a>Your Ads privacy choices</a>
+			</div>
+			<div class="copyright">
+				© 1996-2023, Amazon.com, Inc. or its affiliates
+			</div>
+		</div>
+	</footer>
+	<script>
+		let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.add('active');
+    } else {
+      slide.classList.remove('active');
+    }
+  });
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+  showSlide(currentSlide);
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+  showSlide(currentSlide);
+}
+
+//todays deal
+
+	</script>
+
+	
+</body>
+</html>
